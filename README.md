@@ -8,7 +8,7 @@ This repository includes the code of the publication [[Richter-Pechanski et al. 
 
 As this tool implemets a Keras model for named entity recognition, it can be performed on any sequence labeling task. Major parts of the code had been inspired by Tobias NER tutorial: https://www.depends-on-the-definition.com/lstm-with-char-embeddings-for-ner/
 
-Feel free to use the tool and adapt it to your needs. Usability improvements are very welcome.
+Feel free to adapt the tool to your needs. Usability improvements are very welcome.
 
 ## Prerequisities
 
