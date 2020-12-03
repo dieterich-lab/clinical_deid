@@ -17,7 +17,12 @@ This repository includes the code of the publication [[Richter-Pechanski et al. 
 
 ## Installation
 
+This installation procedure has been tested on a Debian 8 machine. Attention: By default the tool generates ELMo embeddings with a maximum sequence length equal to the longest sequence in your data. In the i2b2 data this is 3039 token. To generate such embeddings, you need a machine with >500G RAM.
 
+1. Clone the repository
+```console
+foo@bar:~$ git clone 
+```
 
 
 ## Evaluation on i2b2 2006 Data
