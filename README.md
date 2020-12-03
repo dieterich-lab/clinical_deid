@@ -63,6 +63,8 @@ path_test = 'data/deid_surrogate_test_all_groundtruth_version2.conll'
 foo@bar:~$ python lstm_elmo.py
 ```
 3. If the training is done, you will get a tokenwise and entitywise classification report on the console.
+4. In addition a h5 model file called best_model_lstm_elmo.h5 is saved into the root folder. This can be used to load it into a de-identification pipeline.
+
 
 ## Evaluation on i2b2 2006 Data
 This model was evaluated on the dataset published for the Shared Task of the i2b2 challenge for De-Identification. for details see, [[Uzuner at al., 1007]](#2).
