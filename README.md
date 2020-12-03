@@ -57,13 +57,14 @@ Currently the script does not use the BIO Format by default.
 
 ## Performaing de-identification task
 
-1. To run the script, prepare your taining and test files as described above and save them into the folder *data*. Next edit the lstm_elmo_i2b2.py script on line 17 and 18.
+1. To run the script, prepare your taining and test files as described above and save them into the folder *data*. Next edit the lstm_elmo.py script on line 17 and 18.
 ```python
 # Defining the training and test data
 path_train = 'data/deid_surrogate_train_all_version2.conll'
 path_test = 'data/deid_surrogate_test_all_groundtruth_version2.conll'
 ```
-2. Next you can run the script.
+2. For a custom evaluation report, you need to define your PHI class in the file lstm_elmo in line 14
+3. Next you can run the script.
 ```console
 foo@bar:~$ python lstm_elmo.py
 ```
