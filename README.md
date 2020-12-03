@@ -21,7 +21,14 @@ This installation procedure has been tested on a Debian 8 machine. Attention: By
 
 1. Clone the repository
 ```console
-foo@bar:~$ git clone 
+foo@bar:~$ git clone https://github.com/dieterich-lab/clinical_deid.git
+foo@bar:~$ cd clinical_deid
+```
+2. Create and activate a virtual environment and install required packages
+```console
+foo@bar:~$ virtualenv -p python 3.6 venv
+foo@bar:~$ source venv/bin/activate
+foo@bar:~$ pip install -r requirements.txt
 ```
 
 
