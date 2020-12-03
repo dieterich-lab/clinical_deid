@@ -80,7 +80,8 @@ foo@bar:~$ python lstm_elmo.py
 ```
 
 ## Evaluation on i2b2 2006 Data
-This model was evaluated on the dataset published for the Shared Task of the i2b2 challenge for De-Identification. for details see, [[Uzuner at al., 1007]](#2).
+Due to data protection reasons, we can not share the data set used in the publication [[Richter-Pechanski et al. 2019]](#1). <br>
+For transparency and validity reasons, this model was evaluated on the dataset published for the Shared Task of the i2b2 challenge for De-Identification. For details see, [[Uzuner at al., 1007]](#2).
 For evaluation the model had the following hyperparamters:<br>
 
 ### Hyperparameters
