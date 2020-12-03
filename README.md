@@ -53,6 +53,7 @@ Smith   PATIENT
 68   AGE
 Years   AGE
 ```
+Currently the script does not use the BIO Format by default.
 
 ## Performaing de-identification task
 
