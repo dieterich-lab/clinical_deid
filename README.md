@@ -46,12 +46,12 @@ Congratulations, now you are able to train a model for de-identification.
 If you want to run the i2b2 task, you need to download the i2b2 2006 de-identification data set at https://www.i2b2.org/NLP/DataSets/ and convert the data into a tab separated CoNLL file with 2 columns. The first column contains the Token, the second column the PHI class. Sentences or paragraphs are separated by a newline. 
 
 ```python
-Token1 O
-Token2 
-Token3
+Mister   O
+Thomas   PATIENT
+Smith   PATIENT
 
-Token1
-Token2
+68   AGE
+Years   AGE
 ```
 
 ## Performaing de-identification task
