@@ -2,7 +2,7 @@
 
 This repository includes the code of the publication [[Richter-Pechanski et al. 2019]](#1). This architecture was used to de-identify German medical admission notes from the cardiology domain in the HiGHmed Heidelberg partnerside. Main features are:
 
-1. Pre-trained ELMo embeddings [[Wanxiang et al. 2018]][#3][[Peters et al. 2018]][#4]
+1. Pre-trained ELMo embeddings [[Wanxiang et al. 2018]](#3)[[Peters et al. 2018]](#4)
 2. concatendated with Character Embeddings
 3. Bidirectional LSTM layer
 
