@@ -1,6 +1,10 @@
 # Clinical DeID:<br> De-Identification of Clinical Admission Notes using BiLSTM and Embedded Languages Models (ELMo) as Word Representation
 
-This repository includes the code of the publication [[Richter-Pechanski et al. 2019]](#1)
+This repository includes the code of the publication [[Richter-Pechanski et al. 2019]](#1). This architecture was used to de-identify German medical admission notes from the cardiology domain in the HiGHmed Heidelberg partnerside. Main features are:
+
+1. Pre-trained ELMo embeddings [[Wanxiang et al. 2018]][#3][[Peters et al. 2018]][#4]
+2. Bidirectional LSTM layer
+
 
 ## Evaluation on i2b2 2006 Data
 This model was evaluated on the dataset published for the Shared Task of the i2b2 challenge for De-Identification. for details see, [[Uzuner at al., 1007]](#2).
@@ -51,14 +55,24 @@ We did not do any hyperparamter tuning.
 
 ## References
 <a id="1">[1]</a> 
-Richter-Pechanski P, Amr A, Katus HA, Dieterich C.,
+Richter-Pechanski P, Amr A, Katus HA, Dieterich C,
 *Deep Learning Approaches Outperform Conventional Strategies in De-Identification of German Medical Reports.*, in
 Stud Health Technol Inform. 2019 Sep 3;267:101-109,
-doi: 10.3233/SHTI190813. PMID: 31483261.
+doi:10.3233/SHTI190813.
 
 <a id="2">[2]</a> 
-Uzuner O, Luo Y, Szolovits P.,
+Uzuner O, Luo Y, Szolovits P,
 *Evaluating the state-of-the-art in automatic de-identification*, in
 J Am Med Inform Assoc. 2007;14(5):550-563,
 doi:10.1197/jamia.M2444.
 
+<a id="3">[3]</a> 
+Wanxiang Ch, Yijia L, Yuxuan W, Bo Zh, Ting L,
+*Towards Better UD Parsing: Deep Contextualized Word Embeddings, Ensemble, and Treebank Concatenation*, in
+Proceedings of the CoNLL 2018 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies 2018, 55-64,
+doi:10.18653/v1/K18-2005.
+
+<a id="4">[4]</a>
+Peters M,  Neumann M, Iyyer M, Gardner M, Clark Ch, Lee K, Zettlemoyer L,
+*Deep contextualized word representations*
+arXiv preprint arXiv:1802.05365 (2018).
