@@ -31,7 +31,7 @@ foo@bar:~$ source venv/bin/activate
 foo@bar:~$ pip install -r requirements.txt
 ```
 3. Setup the ELMo embeddings using ELMoForManyLangs
-3.1. Download the required language package from this repository: [https://github.com/HIT-SCIR/ELMoForManyLangs][https://github.com/HIT-SCIR/ELMoForManyLangs]
+3.1. Download the required language package from this repository: [https://github.com/HIT-SCIR/ELMoForManyLangs]
 
 
 ## Evaluation on i2b2 2006 Data
