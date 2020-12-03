@@ -17,7 +17,7 @@ This repository includes the code of the publication [[Richter-Pechanski et al. 
 
 ## Installation
 
-This installation procedure has been tested on a Debian 8 machine. Attention: By default the tool generates ELMo embeddings with a maximum sequence length equal to the longest sequence in your data. In the i2b2 data this is 3039 token. To generate such embeddings, you need a machine with >500G RAM.
+This installation procedure has been tested on a Debian 8 machine. Attention: By default the tool generates ELMo embeddings with a maximum sequence length equal to the longest sequence in your data. In the i2b2 data this is 3039 token. To generate such embeddings, this code is tested on a machine with >1000G RAM.
 
 1. Clone the repository
 ```console
@@ -32,12 +32,37 @@ foo@bar:~$ pip install -r requirements.txt
 ```
 3. Setup the ELMo embeddings using ELMoForManyLangs
     * Change into folder configs/elmo
-    * Download the required language package from this repository: [https://github.com/HIT-SCIR/ELMoForManyLangs]
+    * Download the required language package from this repository: https://github.com/HIT-SCIR/ELMoForManyLangs
     * Unzip the zip file
     ```console
     foo@bar:~$ unzip 144.zip
     ```   
+    * Change the value of the key config_path in the file config.json to cnn_50_100_512_4096_sample.json
+    
+Congratulations, now you are able to train a model for de-identification. If you want to run the i2b2 task, you need to download the i2b2 2006 de-identification data set at https://www.i2b2.org/NLP/DataSets/ and convert the data into a tab separated CoNLL file with 2 columns. The first column contains the Token, the second column the PHI class. Sentences or paragraphs are separated by a newline. 
 
+```python
+Token1 O
+Token2 
+Token3
+
+Token1
+Token2
+```
+
+## Performaing de-identification task
+
+1. To run the script, prepare your taining and test files as described above and save them into the folder *data*. Next edit the lstm_elmo_i2b2.py script on line 17 and 18.
+```python
+# Defining the training and test data
+path_train = 'data/deid_surrogate_train_all_version2.conll'
+path_test = 'data/deid_surrogate_test_all_groundtruth_version2.conll'
+```
+2. Next you can run the script.
+```console
+foo@bar:~$ python lstm_elmo.py
+```
+3. If the training is done, you will get a tokenwise and entitywise classification report on the console.
 
 ## Evaluation on i2b2 2006 Data
 This model was evaluated on the dataset published for the Shared Task of the i2b2 challenge for De-Identification. for details see, [[Uzuner at al., 1007]](#2).
