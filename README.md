@@ -2,14 +2,20 @@
 
 This repository includes the code of the publication [[Richter-Pechanski et al. 2019]](#1)
 
-## References
-<a id="1">[1]</a> 
-Richter-Pechanski P, Amr A, Katus HA, Dieterich C.,
-*Deep Learning Approaches Outperform Conventional Strategies in De-Identification of German Medical Reports.*, in
-Stud Health Technol Inform. 2019 Sep 3;267:101-109,
-doi: 10.3233/SHTI190813. PMID: 31483261.
-
 ## Evaluation on i2b2 2006 Data
+This model was evaluated on the dataset published for the Shared Task of the i2b2 challenge for De-Identification. for details see, [[Uzuner at al., 1007]](#2).
+For evaluation the model had the following hyperparamters:<br>
+
+### Hyperparameters
+* Batch size: 128
+* Epochs: 200
+* Early stopping in *validation loss* with patience *20*
+* Dimension ELMo: 1024
+* Dimension Character Embedding: 15
+* Maximum sequence length: 3037
+* Validation split: 10% of training data
+
+We did not do any hyperparamter tuning.
 
 ### Tokenwise Evaluation
 
@@ -41,3 +47,18 @@ doi: 10.3233/SHTI190813. PMID: 31483261.
 |   micro avg|       0.99     | 0.96   |   0.97  |    8080|
 |   macro avg|       0.86     | 0.80   |   0.83  |    8080|
 |weighted avg|       0.99     | 0.96   |   0.97  |    8080|
+
+
+## References
+<a id="1">[1]</a> 
+Richter-Pechanski P, Amr A, Katus HA, Dieterich C.,
+*Deep Learning Approaches Outperform Conventional Strategies in De-Identification of German Medical Reports.*, in
+Stud Health Technol Inform. 2019 Sep 3;267:101-109,
+doi: 10.3233/SHTI190813. PMID: 31483261.
+
+<a id="2">[2]</a> 
+Uzuner O, Luo Y, Szolovits P.,
+*Evaluating the state-of-the-art in automatic de-identification*, in
+J Am Med Inform Assoc. 2007;14(5):550-563,
+doi:10.1197/jamia.M2444.
+
