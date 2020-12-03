@@ -31,7 +31,12 @@ foo@bar:~$ source venv/bin/activate
 foo@bar:~$ pip install -r requirements.txt
 ```
 3. Setup the ELMo embeddings using ELMoForManyLangs
+    * Change into folder configs/elmo
     * Download the required language package from this repository: [https://github.com/HIT-SCIR/ELMoForManyLangs]
+    * Unzip the zip file
+    ```console
+    foo@bar:~$ unzip 144.zip
+    ```   
 
 
 ## Evaluation on i2b2 2006 Data
