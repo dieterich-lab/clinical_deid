@@ -39,7 +39,11 @@ foo@bar:~$ pip install -r requirements.txt
     ```   
     * Change the value of the key config_path in the file config.json to cnn_50_100_512_4096_sample.json
     
-Congratulations, now you are able to train a model for de-identification. If you want to run the i2b2 task, you need to download the i2b2 2006 de-identification data set at https://www.i2b2.org/NLP/DataSets/ and convert the data into a tab separated CoNLL file with 2 columns. The first column contains the Token, the second column the PHI class. Sentences or paragraphs are separated by a newline. 
+Congratulations, now you are able to train a model for de-identification. 
+
+## Data Format
+
+If you want to run the i2b2 task, you need to download the i2b2 2006 de-identification data set at https://www.i2b2.org/NLP/DataSets/ and convert the data into a tab separated CoNLL file with 2 columns. The first column contains the Token, the second column the PHI class. Sentences or paragraphs are separated by a newline. 
 
 ```python
 Token1 O
@@ -65,6 +69,14 @@ foo@bar:~$ python lstm_elmo.py
 3. If the training is done, you will get a tokenwise and entitywise classification report calculated on the test set on the console.
 4. In addition a h5 model file called best_model_lstm_elmo.h5 is saved into the root folder. This can be used to load it into a de-identification pipeline.
 
+
+## Folder structure
+
+```bash
+├── config
+│   ├── elmo (Contains the pre-trained ELMo embeddings, see section Installation)
+├── data (Containing CoNLL formated training and test files, see section Data Format)
+```
 
 ## Evaluation on i2b2 2006 Data
 This model was evaluated on the dataset published for the Shared Task of the i2b2 challenge for De-Identification. for details see, [[Uzuner at al., 1007]](#2).
