@@ -30,7 +30,7 @@ For evaluation the model had the following hyperparamters:<br>
 * Early stopping in *validation loss* with patience *20*
 * Dimension ELMo: 1024
 * Dimension Character Embedding: 15
-* Maximum sequence length: 3037
+* Maximum sequence length: longest sentence in dataset
 * Validation split: 10% of training data
 
 We did not do any hyperparamter tuning.
