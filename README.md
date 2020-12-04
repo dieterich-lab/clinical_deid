@@ -43,7 +43,7 @@ foo@bar:~$ pip install -r requirements.txt
     ```console
     foo@bar:~$ unzip 144.zip
     ```   
-    * Change the value of the key config_path in the file config.json to cnn_50_100_512_4096_sample.json
+    * Change the value of the key *config_path* in the file <pre>config.json</pre> to <pre>cnn_50_100_512_4096_sample.json</pre>
     
 Congratulations, now you are able to train a model for de-identification. 
 
