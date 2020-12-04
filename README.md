@@ -43,7 +43,7 @@ foo@bar:~$ pip install -r requirements.txt
     ```console
     foo@bar:~$ unzip 144.zip
     ```   
-    * Change the value of the key *config_path* in the file <pre>config.json</pre> to <pre>cnn_50_100_512_4096_sample.json</pre>
+    * Change the value of the key *config_path* in the file `config.json` to `cnn_50_100_512_4096_sample.json`.
     
 Congratulations, now you are able to train a model for de-identification. 
 
@@ -59,17 +59,16 @@ Smith   PATIENT
 68   AGE
 Years   AGE
 ```
-Currently the script does not use the BIO Format by default.
 
 ## Performaing de-identification task
 
-1. To run the script, prepare your CoNLL formated taining and test files as described above and save them into the folder *data*.
+1. To run the script, prepare your CoNLL formated taining and test files as described above and save them into the folder `data/`.
 2. Next you can run the script defining the arguments --path_train and --path_test.
 ```console
 foo@bar:~$ python lstm_elmo.py --path_train data/deid_surrogate_train_all_version2.conll path_test data/deid_surrogate_test_all_groundtruth_version2.conll
 ```
 3. If the training is done, you will get a tokenwise and entitywise classification report calculated on the test set on the console.
-4. In addition a h5 model file called best_model_lstm_elmo.h5 is saved into the root folder. This can be used to load it into a de-identification pipeline.
+4. In addition a h5 model file called `best_model_lstm_elmo.h5` is saved into the root folder. This can be used to load it into a de-identification pipeline.
 
 ## Customizing hyperparameters
 
