@@ -38,6 +38,9 @@ foo@bar:~$ pip install -r requirements.txt
 ```
 3. Setup the ELMo embeddings using ELMoForManyLangs
     * Change into folder `configs/elmo/` 
+    ```console
+    foo@bar:~$ cd configs/elmo/
+    ```
     * Download the required language package from this repository: https://github.com/HIT-SCIR/ELMoForManyLangs
     * Unzip the zip file
     ```console
