@@ -95,14 +95,16 @@ Due to data protection reasons, we can not share the data set used in the public
 For transparency and validity reasons, this model was evaluated on the dataset published for the Shared Task of the i2b2 challenge for De-Identification. For details see, [[Uzuner at al., 1007]](#2).
 For evaluation the model had the following hyperparamters:<br>
 
-### Hyperparameters
+### Hyperparameters, used for the i2b2 Evaluation
 * Batch size: 128
-* Epochs: 200
-* Early stopping in *validation loss* with patience *20*
+* Epochs: 100
+* Early stopping in *validation loss* with patience *10*
 * Dimension ELMo: 1024
 * Dimension Character Embedding: 15
 * Maximum sequence length: longest sentence in dataset
 * Validation split: 10% of training data
+* Hidden layer size LSTM: 50 (2x BiLSTM: 100)
+* Dropout after embedding layers: 0.3
 
 We did not do any hyperparamter tuning.
 
@@ -125,17 +127,18 @@ We did not do any hyperparamter tuning.
 
 ||precision  |  recall|  f1-score |  support|
 |--|--|--|--|--|
-|         AGE|       0.00     | 0.00   |   0.00  |       3|
-|        DATE|       0.99     | 1.00   |   0.99  |    2153|
-|      DOCTOR|       0.98     | 0.98   |   0.98  |    2297|
-|    HOSPITAL|       0.98     | 0.88   |   0.93  |    1598|
-|          ID|       1.00     | 1.00   |   1.00  |    1194|
-|    LOCATION|       0.96     | 0.79   |   0.87  |     240|
-|     PATIENT|       0.99     | 0.94   |   0.96  |     510|
-|       PHONE|       1.00     | 0.86   |   0.92  |      85|
-|   micro avg|       0.99     | 0.96   |   0.97  |    8080|
-|   macro avg|       0.86     | 0.80   |   0.83  |    8080|
-|weighted avg|       0.99     | 0.96   |   0.97  |    8080|
+|        DATE|       1.00|      0.99|      0.99 |     2153|
+|          ID|       0.99|      1.00|      1.00 |     1194|
+|    LOCATION|       0.98|      0.82|      0.89 |      240|
+|       PHONE|       1.00|      0.91|      0.95 |       85|
+|     PATIENT|       0.99|      0.96|      0.97 |      510|
+|    HOSPITAL|       0.99|      0.88|      0.93 |     1598|
+|      DOCTOR|       0.99|      0.98|      0.98 |     2297|
+|         AGE|       0.00|      0.00|      0.00 |        3|
+|   micro avg|       0.99|      0.96|      0.97 |     8080|
+|   macro avg|       0.87|      0.82|      0.84 |     8080|
+|weighted avg|       0.99|      0.96|      0.97 |     8080|
+
 
 
 ## References
