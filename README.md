@@ -75,7 +75,7 @@ foo@bar:~$ python lstm_elmo.py --path_train data/deid_surrogate_train_all_versio
 
 ## Customizing hyperparameters
 
-Currently, to cusotmize the hyperparamters, you have to edit them in the script.
+Currently, to customize the hyperparamters, you have to edit them in the script `lstm_elmo.py`.
 * Batch_size is defined in line 152
 * Number of epochs in line 153
 * Hidden layer sizes, drop out values, and the loss function are defined in lines 167-189
