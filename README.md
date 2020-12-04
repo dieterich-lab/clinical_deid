@@ -1,12 +1,12 @@
 # Clinical DeID:<br> De-Identification of Clinical Admission Notes using BiLSTM and Embedded Languages Models (ELMo) as Word Representation
 
-This repository includes the code of the publication [[Richter-Pechanski et al. 2019]](#1). This architecture was used to de-identify German medical admission notes from the cardiology domain in the HiGHmed Heidelberg partnerside. Main features are:
+This repository includes the code of the publication [[Richter-Pechanski et al. 2019]](#1). This architecture was used to de-identify German medical admission notes from the cardiology domain in the HiGHmed Heidelberg partnersite. Main features are:
 
 1. Pre-trained ELMo embeddings [[Wanxiang et al. 2018]](#3)[[Peters et al. 2018]](#4)
 2. concatendated with Character Embeddings
 3. Bidirectional LSTM layer
 
-As this tool implemets a Keras model for named entity recognition, it can be performed on any sequence labeling task. Major parts of the code had been inspired by Tobias NER tutorial: https://www.depends-on-the-definition.com/lstm-with-char-embeddings-for-ner/
+As this tool implements a Keras model for named entity recognition, it can be performed on any sequence labeling task. Major parts of the code had been inspired by Tobias NER tutorial: https://www.depends-on-the-definition.com/lstm-with-char-embeddings-for-ner/
 
 Feel free to adapt the tool to your needs. Usability improvements are very welcome.
 
