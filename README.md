@@ -61,19 +61,21 @@ Currently the script does not use the BIO Format by default.
 
 ## Performaing de-identification task
 
-1. To run the script, prepare your taining and test files as described above and save them into the folder *data*. Next edit the lstm_elmo.py script on line 17 and 18.
-```python
-# Defining the training and test data
-path_train = 'data/deid_surrogate_train_all_version2.conll'
-path_test = 'data/deid_surrogate_test_all_groundtruth_version2.conll'
-```
-2. For a custom evaluation report, you need to define your PHI class in the file lstm_elmo in line 14
-3. Next you can run the script.
+1. To run the script, prepare your CoNLL formated taining and test files as described above and save them into the folder *data*.
+2. Next you can run the script defining the arguments --path_train and --path_test.
 ```console
-foo@bar:~$ python lstm_elmo.py
+foo@bar:~$ python lstm_elmo.py --path_train data/deid_surrogate_train_all_version2.conll path_test = data/deid_surrogate_test_all_groundtruth_version2.conll
 ```
 3. If the training is done, you will get a tokenwise and entitywise classification report calculated on the test set on the console.
 4. In addition a h5 model file called best_model_lstm_elmo.h5 is saved into the root folder. This can be used to load it into a de-identification pipeline.
+
+## Customizing hyperparameters
+
+Currently, to cusotmize the hyperparamters, you have to edit them in the script.
+* Batch_size is defined in line 152
+* Number of epochs in line 153
+* Hidden layer sizes, drop out values, and the loss function are defined in lines 167-189
+* Early stopping and patience are defined in line 192-192
 
 
 ## Folder structure
