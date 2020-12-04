@@ -104,8 +104,8 @@ We did not do any hyperparamter tuning.
 
 ### Tokenwise Evaluation
 
-|precision  |  recall|  f1-score |  support|
-|--|--|--|--|
+||precision  |  recall|  f1-score |  support|
+|--|--|--|--|--|
 |       ID     |  0.99  |    0.99  |    0.99  |     755
 |     DATE     |  0.99  |    1.00  |    0.99  |    1924
 |   DOCTOR     |  0.96  |    0.96  |    0.96  |    1061
@@ -119,8 +119,8 @@ We did not do any hyperparamter tuning.
 
 ### Entitywise Evaluation
 
-|              precision |   recall  |f1-score  | support|
-|--|--|--|--|
+||precision  |  recall|  f1-score |  support|
+|--|--|--|--|--|
 |         AGE|       0.00     | 0.00   |   0.00  |       3|
 |        DATE|       0.99     | 1.00   |   0.99  |    2153|
 |      DOCTOR|       0.98     | 0.98   |   0.98  |    2297|
