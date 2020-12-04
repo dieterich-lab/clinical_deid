@@ -19,6 +19,8 @@ Feel free to adapt the tool to your needs. Usability improvements are very welco
 * seqeval==0.0.12
 * scikit-learn==0.20.4
 
+Pre-trained ELMo embeddings. For details see next section (Installation) point 3.
+
 ## Installation
 
 This installation procedure has been tested on a Debian 8 machine. Attention: By default the tool generates ELMo embeddings with a maximum sequence length equal to the longest sequence in your data. In the i2b2 data this is 3039 token. To generate such embeddings, this code is tested on a machine with >1000G RAM.
