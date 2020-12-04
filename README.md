@@ -102,7 +102,7 @@ For evaluation the model had the following hyperparamters:<br>
 
 We did not do any hyperparamter tuning.
 
-### Tokenwise Evaluation
+### Entitywise Evaluation
 
 ||precision  |  recall|  f1-score |  support|
 |--|--|--|--|--|
@@ -117,7 +117,7 @@ We did not do any hyperparamter tuning.
 |micro avg     |  0.93  |    0.94  |    0.93  |    4837
 |macro avg     |  0.93  |    0.94  |    0.94  |    4837
 
-### Entitywise Evaluation
+### Tokenwise Evaluation
 
 ||precision  |  recall|  f1-score |  support|
 |--|--|--|--|--|
