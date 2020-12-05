@@ -110,6 +110,7 @@ For evaluation the model had the following hyperparamters:<br>
 We did not do any further hyperparamter tuning.
 
 ### Entitywise Evaluation
+Multiclass
 
 ||precision  |  recall|  f1-score |  support|
 |--|--|--|--|--|
@@ -124,7 +125,15 @@ We did not do any further hyperparamter tuning.
 |micro avg|       0.93|      0.94|      0.94|      4837|
 |macro avg|       0.93|      0.94|      0.94|      4837|
 
+Binary 
+
+
+||precision  |  recall|  f1-score |  support|
+|--|--|--|--|--|
+|      PHI  |     0.93     | 0.94|      0.93|      4104|
+
 ### Tokenwise Evaluation
+Multiclass
 
 ||precision  |  recall|  f1-score |  support|
 |--|--|--|--|--|
@@ -140,7 +149,11 @@ We did not do any further hyperparamter tuning.
 |   macro avg|       0.87|      0.82|      0.84 |     8080|
 |weighted avg|       0.99|      0.96|      0.97 |     8080|
 
+Binary 
 
+||precision  |  recall|  f1-score |  support|
+|--|--|--|--|--|
+|         PHI   |    0.99  |    0.96   |   0.98  |    8080|
 
 ## References
 <a id="1">[1]</a> 
