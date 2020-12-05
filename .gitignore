@@ -7,3 +7,4 @@ configs/elmo/token_embedder.pkl
 configs/elmo/word.dic
 data/*.txt
 data/*.conll
+embeddings/*.npy
