@@ -20,11 +20,15 @@ parser.add_argument('--path_train', type=str,
 parser.add_argument('--path_test', type=str,
                     help='Path to the CoNLL formated test file.')
 
+parser.add_argument('--mode', type=str,
+                    help='Select if you want to perform a multiclass or binary entity recognition task.')
+
 
 args = parser.parse_args()
 
 path_train = args.path_train
 path_test = args.path_test
+mode = args.mode
 
 # Defining the training and test data
 #path_train = 'data/deid_surrogate_train_all_version2.conll'
@@ -44,9 +48,17 @@ def create_dataset(path, max_len=0):
         for line in f:
             line = line.split('\t')
             if len(line) > 1:
+                if mode == 'binary':
+                    if line[1].strip() == 'O':
+                        label.append('O')
+                        tags.append('O')
+                    else:
+                        label.append('PHI')
+                        tags.append('PHI')
+                else:
+                    label.append(line[1].strip())
+                    tags.append(line[1].strip())
                 letter.append(line[0].strip())
-                label.append(line[1].strip())
-                tags.append(line[1].strip())
                 words.append(line[0].strip())
             else:
                 letters.append(letter)
