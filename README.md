@@ -6,7 +6,7 @@ This repository includes the code of the publication [[Richter-Pechanski et al. 
 2. concatendated with Character Embeddings
 3. Bidirectional LSTM layer
 
-As this tool implements a Keras model for named entity recognition, it can be applied on any sequence labeling task. Major parts of the code had been inspired by Tobias NER tutorial: https://www.depends-on-the-definition.com/lstm-with-char-embeddings-for-ner/
+As this tool implements a Keras model for named entity recognition, it can be applied on any sequence labeling task. Parts of the code are inspired by Tobias' amazing NER tutorial: https://www.depends-on-the-definition.com/lstm-with-char-embeddings-for-ner/
 
 Feel free to adapt the tool to your needs. Functionality and usability improvements are very welcome.
 
