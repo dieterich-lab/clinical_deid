@@ -5,3 +5,5 @@ configs/elmo/encoder.pkl
 configs/elmo/meta.json
 configs/elmo/token_embedder.pkl  
 configs/elmo/word.dic
+data/*.txt
+data/*.conll
