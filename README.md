@@ -89,6 +89,7 @@ Currently, to customize the hyperparamters, you have to edit them in the script 
 │   ├── elmo (Pre-trained ELMo embeddings, see section Installation)
 ├── data (CoNLL formated training and test files, see section *Data Format*)
 ├── models (H5 formated models saved by recent training sessions) 
+├── embeddings (Generated ELMo embeddings of training and test data) 
 ```
 
 ## Evaluation on i2b2 2006 Data
