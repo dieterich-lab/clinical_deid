@@ -63,7 +63,7 @@ Smith   PATIENT
 Years   AGE
 ```
 
-## Performaing de-identification task
+## Performing a de-identification task
 
 1. To run the script, prepare your CoNLL formated training and test files as described in section *Data Format* and save them into the folder `data/`.
 2. Next you can run the script defining the arguments --path_train and --path_test.
