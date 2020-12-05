@@ -8,3 +8,4 @@ configs/elmo/word.dic
 data/*.txt
 data/*.conll
 embeddings/*.npy
+models/
