@@ -76,10 +76,10 @@ foo@bar:~$ python lstm_elmo.py --mode binary --path_train data/deid_surrogate_tr
 ## Customizing hyperparameters
 
 Currently, to customize the hyperparamters, you have to edit them in the script `lstm_elmo.py`.
-* Batch_size is defined in line 152
-* Number of epochs in line 153
-* Hidden layer sizes, drop out values, and the loss function are defined in lines 167-189
-* Early stopping and patience are defined in line 192-192
+* Batch_size is defined in line 164
+* Number of epochs in line 165
+* Hidden layer sizes, drop out values, and the loss function are defined in lines 179-201
+* Early stopping and patience are defined in line 204-205
 
 
 ## Folder structure
