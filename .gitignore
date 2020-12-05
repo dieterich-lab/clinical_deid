@@ -1,1 +1,7 @@
 venv/
+configs/elmo/char.dic
+configs/elmo/config.json  
+configs/elmo/encoder.pkl  
+configs/elmo/meta.json
+configs/elmo/token_embedder.pkl  
+configs/elmo/word.dic
