@@ -86,8 +86,9 @@ Currently, to customize the hyperparamters, you have to edit them in the script 
 
 ```bash
 ├── config
-│   ├── elmo (Contains the pre-trained ELMo embeddings, see section Installation)
-├── data (Containing CoNLL formated training and test files, see section *Data Format*)
+│   ├── elmo (Pre-trained ELMo embeddings, see section Installation)
+├── data (CoNLL formated training and test files, see section *Data Format*)
+├── models (H5 formated models saved by recent training sessions) 
 ```
 
 ## Evaluation on i2b2 2006 Data
