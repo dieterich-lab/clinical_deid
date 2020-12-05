@@ -1,0 +1,7 @@
+Keras==2.3.1
+elmoformanylangs==0.0.2
+numpy==1.17.3
+seqeval==0.0.12
+scikit-learn==0.20.4
+torch==0.4.1
+tensorflow==1.13.1
