@@ -32,7 +32,7 @@ foo@bar:~$ cd clinical_deid
 ```
 2. Create and activate a virtual environment and install required packages
 ```console
-foo@bar:~$ virtualenv -p python 3.6 venv
+foo@bar:~$ virtualenv -p python3.6 venv
 foo@bar:~$ source venv/bin/activate
 foo@bar:~$ pip install -r requirements.txt
 ```
