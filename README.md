@@ -6,9 +6,9 @@ This repository includes the code of the publication [[Richter-Pechanski et al. 
 2. concatendated with Character Embeddings
 3. Bidirectional LSTM layer
 
-As this tool implements a Keras model for named entity recognition, it can be performed on any sequence labeling task. Major parts of the code had been inspired by Tobias NER tutorial: https://www.depends-on-the-definition.com/lstm-with-char-embeddings-for-ner/
+As this tool implements a Keras model for named entity recognition, it can be applied on any sequence labeling task. Major parts of the code had been inspired by Tobias NER tutorial: https://www.depends-on-the-definition.com/lstm-with-char-embeddings-for-ner/
 
-Feel free to adapt the tool to your needs. Usability improvements are very welcome.
+Feel free to adapt the tool to your needs. Functionality and usability improvements are very welcome.
 
 ## Prerequisities
 
@@ -19,7 +19,7 @@ Feel free to adapt the tool to your needs. Usability improvements are very welco
 * seqeval==0.0.12
 * scikit-learn==0.20.4
 
-Pre-trained ELMo embeddings. For details see next section (Installation) point 3.
+Pre-trained ELMo embeddings. Where to get and how to setup see next section (Installation) bullet 3.
 
 ## Installation
 
@@ -52,7 +52,7 @@ Congratulations, now you are able to train a model for de-identification.
 
 ## Data Format
 
-If you want to run the i2b2 task, you need to download the i2b2 2006 de-identification data set at https://www.i2b2.org/NLP/DataSets/ and convert the data into a tab separated CoNLL file with 2 columns. The first column contains the Token, the second column the PHI class. Sentences or paragraphs are separated by a newline. 
+If you want to run the i2b2 task, you need to download the i2b2 2006 de-identification data set at https://www.i2b2.org/NLP/DataSets/ and convert the data into a tab separated CoNLL file with 2 columns. The first column contains the token, the second column the entity class. Sentences or paragraphs are separated by a newline. 
 
 ```python
 Mister   O
@@ -65,13 +65,13 @@ Years   AGE
 
 ## Performaing de-identification task
 
-1. To run the script, prepare your CoNLL formated taining and test files as described above and save them into the folder `data/`.
+1. To run the script, prepare your CoNLL formated training and test files as described in section *Data Format* and save them into the folder `data/`.
 2. Next you can run the script defining the arguments --path_train and --path_test.
 ```console
 foo@bar:~$ python lstm_elmo.py --path_train data/deid_surrogate_train_all_version2.conll path_test data/deid_surrogate_test_all_groundtruth_version2.conll
 ```
-3. If the training is done, you will get a tokenwise and entitywise classification report calculated on the test set on the console.
-4. In addition a h5 model file called `best_model_lstm_elmo.h5` is saved into the root folder. This can be used to load it into a de-identification pipeline.
+3. If the training is done, you will get a tokenwise and entitywise classification report calculated on the test set printed to STDOUT.
+4. In addition a h5 model file called `best_model_lstm_elmo.h5` is saved into the folder `models/`. This can be used to load it into a de-identification pipeline.
 
 ## Customizing hyperparameters
 
@@ -87,7 +87,7 @@ Currently, to customize the hyperparamters, you have to edit them in the script 
 ```bash
 ├── config
 │   ├── elmo (Contains the pre-trained ELMo embeddings, see section Installation)
-├── data (Containing CoNLL formated training and test files, see section Data Format)
+├── data (Containing CoNLL formated training and test files, see section *Data Format*)
 ```
 
 ## Evaluation on i2b2 2006 Data
@@ -95,7 +95,7 @@ Due to data protection reasons, we can not share the data set used in the public
 For transparency and validity reasons, this model was evaluated on the dataset published for the Shared Task of the i2b2 challenge for De-Identification. For details see, [[Uzuner at al., 1007]](#2).
 For evaluation the model had the following hyperparamters:<br>
 
-### Hyperparameters, used for the i2b2 Evaluation
+### Hyperparameters, used for the i2b2 2006 Evaluation
 * Batch size: 128
 * Epochs: 100
 * Early stopping in *validation loss* with patience *10*
@@ -106,7 +106,7 @@ For evaluation the model had the following hyperparamters:<br>
 * Hidden layer size LSTM: 50 (2x BiLSTM: 100)
 * Dropout after embedding layers: 0.3
 
-We did not do any hyperparamter tuning.
+We did not do any further hyperparamter tuning.
 
 ### Entitywise Evaluation
 
