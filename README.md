@@ -145,19 +145,19 @@ We did not do any further hyperparamter tuning.
 <a id="1">[1]</a> 
 Richter-Pechanski P, Amr A, Katus HA, Dieterich C,
 *Deep Learning Approaches Outperform Conventional Strategies in De-Identification of German Medical Reports.*, in
-Stud Health Technol Inform. 2019 Sep 3;267:101-109,
+Stud Health Technol Inform. 2019 Sep 3;267:101-109,<br/> 
 doi:10.3233/SHTI190813.
 
 <a id="2">[2]</a> 
 Uzuner O, Luo Y, Szolovits P,
 *Evaluating the state-of-the-art in automatic de-identification*, in
-J Am Med Inform Assoc. 2007;14(5):550-563,
+J Am Med Inform Assoc. 2007;14(5):550-563,<br/> 
 doi:10.1197/jamia.M2444.
 
 <a id="3">[3]</a> 
 Wanxiang Ch, Yijia L, Yuxuan W, Bo Zh, Ting L,
 *Towards Better UD Parsing: Deep Contextualized Word Embeddings, Ensemble, and Treebank Concatenation*, in
-Proceedings of the CoNLL 2018 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies 2018, 55-64,
+Proceedings of the CoNLL 2018 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies 2018, 55-64,<br/> 
 doi:10.18653/v1/K18-2005.
 
 <a id="4">[4]</a>
