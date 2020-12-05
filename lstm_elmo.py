@@ -21,7 +21,7 @@ parser.add_argument('--path_test', type=str,
                     help='Path to the CoNLL formated test file.')
 
 parser.add_argument('--mode', type=str,
-                    help='Select if you want to perform a multiclass or binary entity recognition task.')
+                    help='Select if you want to perform a -multiclass- or -binary- entity recognition task.')
 
 
 args = parser.parse_args()
