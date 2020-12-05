@@ -190,7 +190,7 @@ model.compile(optimizer="rmsprop", loss="sparse_categorical_crossentropy", metri
 
 # Set callback functions to early stop training and save the best model so far
 callbacks = [EarlyStopping(monitor='val_loss', patience=10),
-             ModelCheckpoint(filepath='models/best_model_lstm_elmo_i2b22006.h5', monitor='val_loss', save_best_only=True)]
+             ModelCheckpoint(filepath='models/best_model_lstm_elmo.h5', monitor='val_loss', save_best_only=True)]
 
 print(model.summary())
 
