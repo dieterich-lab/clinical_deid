@@ -96,24 +96,24 @@ print('Generating train ELMo embeddings...')
 
 e = Embedder('configs/elmo')
 
-'''
+
 elmos_tr = e.sents2elmo(X_train)
 
 X_tr = np.array(elmos_tr)
 
-np.save('elmo_traini2b22006_eng',X_tr)
-'''
-X_tr = np.load('elmo_traini2b22006_eng.npy')
+np.save('embeddings/elmo_train',X_tr)
+
+X_tr = np.load('embeddings/elmo_train.npy')
 
 print('Generating test ELMo embeddings...')
-'''
+
 elmos_te = e.sents2elmo(X_test)
 
 X_te = np.array(elmos_te)
 
-np.save('elmo_testi2b22006_eng',X_te)
-'''
-X_te = np.load('elmo_testi2b22006_eng.npy')
+np.save('embeddings/elmo_test',X_te)
+
+X_te = np.load('embeddings/elmo_test.npy')
 
 # Creating character data set
 def create_char_dataset(data, words, max_len):
