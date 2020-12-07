@@ -66,7 +66,7 @@ Years   AGE
 ## Performing a de-identification task
 
 1. To run the script, prepare your CoNLL formated training and test files as described in section *Data Format* and save them into the folder `data/`.
-2. Next you can run the script defining the arguments --path_train and --path_test and mode. E.g. performaing a binary training:
+2. Next you can run the script defining the arguments `--path_train` and `--path_test` and `--mode [binary|multiclass]`. E.g. performing a binary PHI training:
 ```console
 foo@bar:~$ python lstm_elmo.py --mode binary --path_train data/deid_surrogate_train_all_version2.conll --path_test data/deid_surrogate_test_all_groundtruth_version2.conll
 ```
