@@ -59,8 +59,8 @@ Mister   O
 Thomas   PATIENT
 Smith   PATIENT
 
-68   AGE
-Years   AGE
+08   DATE
+2010   DATE
 ```
 
 ## Performing a de-identification task
@@ -122,7 +122,6 @@ Multiclass
 |  PATIENT   |    0.97|      0.92|      0.94|       244|
 |    PHONE  |     0.90|      0.91|      0.91|        58|
 | LOCATION |      0.82|      0.71|      0.76|       119|
-|      AGE|       0.00|      0.00|      0.00|         3|
 |micro avg|       0.93|      0.94|      0.94|      4837|
 |macro avg|       0.93|      0.94|      0.94|      4837|
 
@@ -145,7 +144,6 @@ Multiclass
 |     PATIENT|       0.99|      0.96|      0.97 |      510|
 |    HOSPITAL|       0.99|      0.88|      0.93 |     1598|
 |      DOCTOR|       0.99|      0.98|      0.98 |     2297|
-|         AGE|       0.00|      0.00|      0.00 |        3|
 |   micro avg|       0.99|      0.96|      0.97 |     8080|
 |   macro avg|       0.87|      0.82|      0.84 |     8080|
 |weighted avg|       0.99|      0.96|      0.97 |     8080|
