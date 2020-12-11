@@ -94,7 +94,7 @@ Currently, to customize the hyperparamters, you have to edit them in the script 
 
 ## Evaluation on i2b2 2006 Data
 Due to data protection reasons, we can not share the data set used in the publication [[Richter-Pechanski et al. 2019]](#1). <br>
-For transparency and validity reasons, this model was evaluated on the dataset published for the Shared Task of the i2b2 challenge for De-Identification. For details see, [[Uzuner at al., 1007]](#2).
+For transparency and validity reasons, this model was evaluated on the dataset published for the Shared Task of the i2b2 challenge for De-Identification. For details see, [[Uzuner at al., 2007]](#2).
 For evaluation the model had the following hyperparamters:<br>
 
 ### Hyperparameters, used for the i2b2 2006 Evaluation
