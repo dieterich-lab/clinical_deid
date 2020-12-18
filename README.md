@@ -154,6 +154,8 @@ Binary
 |--|--|--|--|--|
 |         PHI   |    0.99  |    0.96   |   0.98  |    8080|
 
+*The model currently does not recognize the AGE class in the i2b2 data set properly. This might be due to the small amount of samples in the training set (14 token) and the test set (3 samples). We did not do any in-depth evaluations, to fix this issue until now.*
+
 ## References
 <a id="1">[1]</a> 
 Richter-Pechanski P, Amr A, Katus HA, Dieterich C,
